@@ -1,0 +1,23 @@
+{
+  "name": "@vad-systems/parcel-bug-repro",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "targets": {
+    "server": {
+      "context": "node",
+      "outputFormat": "esmodule",
+      "distDir": "build/server",
+      "source": "src/server/index.ts",
+      "engines": {
+        "node": ">= 21"
+      }
+    }
+  },
+  "devDependencies": {
+    "parcel": "2.12.0"
+  },
+  "scripts": {
+    "build": "npx parcel build"
+  }
+}
